@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Navigation bar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #nav {
+            list-style: none;
+            background-color: skyblue;
+            /* In IE6, if you set a width to it, then it's height won't crash */
+            width: 1000px;
+            margin: 50px auto;
+            /* solve for the height crash problem */
+            overflow: hidden;
+        }
+        
+        #nav li {
+            float: left;
+            width: 25%;
+        }
+        
+        #nav a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 5px 0px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        #nav a:hover {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="nav">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">联系</a></li>
+        <li><a href="#">关于</a></li>
+    </ul>
+</body>
+
+</html>
